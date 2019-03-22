@@ -39,11 +39,13 @@ const renderCafe = doc => {
         
     })
 
-    editForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        console.log(123);
+    // todo
+
+    // editForm.addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    //     console.log(123);
         
-    })
+    // })
 }
 
 // closing the modal
