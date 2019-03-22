@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script> -->
+    </head>
+    <body>
+        <div class="container"></div>
+
+        <h1>Cloud Cafe</h1>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <form id="edit-cafe-form">
+                    <div class="close">+</div>
+                    <input type="text" name="name" placeholder="Cafe name">
+                    <input type="text" name="city" placeholder="Cafe city">
+                    <button>Edit Cafe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="content">
+                
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBRUcjmusIfVgyu9SwWSFTPro-noJL1SCU",
+                authDomain: "fir-tutorial-86a3f.firebaseapp.com",
+                databaseURL: "https://fir-tutorial-86a3f.firebaseio.com",
+                projectId: "fir-tutorial-86a3f",
+                storageBucket: "fir-tutorial-86a3f.appspot.com",
+                messagingSenderId: "822872728817"
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+        </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
